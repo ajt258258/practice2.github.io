@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+/*========= base ===========*/
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Arial, Helvetica, meirio, メイリオ, "Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4", Osaka, "ＭＳ Ｐゴシック", sans-serif;
+  font-weight: 400;
+  color:#515151;
+  line-height: 2.0;
+  background-color: #F6F6F6;
+}
+
+h2,h3,h4,h5 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+ul,li,dl,dt,dd {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+a { 
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+section {
+  /* margin-bottom: 120px; */
+}
+
+.content-wrapper {
+   width: 900px;
+   margin: 0 auto;
+ }
+/* header  */
+ .header {
+  width: 100%;
+  border-top: solid 8px #6CC6C4;
+  margin-bottom: 35px;
+}
+.header-nav {
+  padding-top: 30px;
+  height: 100px;
+  display: flex; 
+  justify-content: space-between; /*アイテムの間を均等にする*/
+  align-items: center;  /*大事 headerの子要素を上下中央にそろえる*/
+}
+.header nav ul {
+ justify-content: space-between;
+ align-items: center;
+}
+.list1  {
+ /* margin-right: 50px; */
+ font-size: 10px;
+ line-height: 18px;
+}
+.list2{
+  font-size: 26px;
+  line-height: 50px;
+}
+.list3 {
+  
+ font-size: 10px;
+ line-height: 18px;
+ border:groove 1px ; 
+ padding: 5px;
+ text-align: center;
+}
+.list3 span {
+  color: #D58F60;
+}
+
+.sitetitle-img {
+  align-items: center;  /*大事 headerの子要素を上下中央にそろえる*/
+  object-fit: cover; /*画像がつぶれないようになる*/
+  width: 250px;
+  height: 45px;
+}
+/* top  */
+.top{
+  margin-bottom: 100px;
+}
+.border-left{
+  border-radius: 5px 0 0 5px;
+}
+.border-right{
+  border-radius: 0 5px 5px 0;
+}
+.header-top ul {
+  width: 20%;
+  line-height: 30px;
+  float: left;
+  text-align: center;
+  background-color: #94DEDC;
+  border: solid 0.03px #71C9C7;
+  padding: 20px;
+  line-height: 15px;
+
+  opacity: 1;
+  
+}
+.header-top ul a{
+  color: white;
+}
+.header-top ul:hover {
+  background-color: #7DD0CE;
+}
+.li-top {
+  font-size: 14px;
+}
+.li-bottom {
+  font-size: 10px;
+}
+/* mainvisual */
+.mainvisual {
+  padding-top: 30px;
+  height: 750px;
+}
+.main {
+  display: flex;
+}
+.main-left {
+  width: 260px;
+  
+}
+.main-left a {
+  color:#515151;
+}
+.main-left a:hover{
+    transition: .1s;
+    color: #71C9C7;
+}
+.main-left ul {
+  padding-bottom: 20px;
+  background-color: white;
+}
+.main-left  li{
+  line-height: 25px;
+  padding: 10px;
+  font-size: 14px;
+  margin-right:15px;
+  margin-left: 15px;
+  border-bottom: inset 0.03px #71C9C7;
+}
+.main-left h4 { 
+  background-color: #94DEDC;
+  border-radius:10px 10px 0 0; /*こっちにもborder-radiusを入れないとはみ出してしまう*/
+  color: white;
+  font-size:16px;
+  line-height: 40px;
+  padding: 5px;
+  padding-left:20px;
+}
+.ippan {
+  border-radius:10px 10px 0 0;
+  border: solid 1px #71C9C7; /*solidでないと見えない*/
+  
+  margin-bottom: 20px;
+}
+.sinbi {
+  border-radius:10px 10px 0 0;
+  border: solid 1px #71C9C7; /*solidでないと見えない*/
+}
+.hishigata li{
+	position:relative;
+	padding-left:30px;
+}
+ 
+.hishigata li:after{
+	content:'';
+	display:block; 
+	position:absolute; 
+	background:#94DEDC;
+	width:9px;
+	height:9px; 
+	top:20px; 
+	left:5px; 
+	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+}
+.main-right {
+  width: 630px;
+  height: 412px;
+  margin-left: 18px;
+  
+}
+.main-right img {
+  width: 630px;
+  margin-bottom: 5px;
+}
+
+
+.new-info {
+  background-color: white;
+  padding: 30px;
+}
+.new-info h4 {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: solid 3px #71C9C7;
+}
+.new-info ul{
+  /* padding: 30px 10px 30px 10px; */
+  font-size: 12px;
+  line-height: 22px;
+  display: flex;
+  padding:10px 0 10px 0;
+  margin:0 10px 0 10px;
+  border-bottom: dotted 1px #515151;; /*点線*/
+  
+}
+.new-info li {
+  padding-right: 25px;
+  white-space: nowrap; /*強制的に1行にする*/
+  font-weight: 700;
+}
+.new-info p {
+  margin: 0; /*検証ツールでチェック*/
+}
+/* footer  */
+footer .content-wrapper {
+  margin-top: 18px;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 5px 0; */
+}
+
+
+footer ul {
+  display: flex; /*display: flexは直前の親要素に入れないと横並びにならない*/
+  background-color: #6CC6C4;
+  border-radius:8px;
+}
+
+
+.footer ul a {
+  color: white;
+  font-weight: 400;
+}
+.footer ul a:hover {
+  border-bottom: solid 1px white;
+}
+.siromaru li{
+  margin-left: 15px;
+  font-size: 13px;
+  line-height: 30px;
+
+  position:relative;
+  padding-left:30px; /*丸と文字の距離*/
+}
+ 
+.siromaru li:after{
+	content:''; 
+	display:block; 
+	position:absolute; 
+	top:30%; 
+	left:3px; 
+	border-radius:30px;
+	height:9px; 
+	width:9px; /*丸の大きさ*/
+	border:2px solid white; /*丸の太さ*/
+}
+.address {
+  text-align: right;
+  font-size: 13px;
+  line-height: 23px;
+  margin:0;
+  padding:15px;
+  border-bottom: solid 2px #71C9C7;
+}
+.copylight p {
+  text-align: center;
+  font-size: 12px;
+  margin: 0; /*最後だから？*/
+  padding:8px 0 20px 0;
+  line-height: 22px;
+}
